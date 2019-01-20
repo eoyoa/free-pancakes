@@ -1,0 +1,12 @@
+{
+    "tokens": [
+        "INSERT_USER_TOKEN_HERE"
+    ],
+    "options": {
+        "sendMs": 2000,
+        "giveMs": 900000,
+        "superuser": "INSERT_SUPERUSER_ID_HERE",
+        "guild": "INSERT_GUILD_ID_HERE",
+        "prefix": "!"
+    }
+}
