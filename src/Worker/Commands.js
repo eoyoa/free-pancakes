@@ -38,7 +38,7 @@ module.exports = {
 									.next()
 									.value.content.split(" ")[2]
 									.replace(/(\*\*)|(,)/g, "");
-					message.channel.send(`p!give ${pancakes} <@329031236133715999>`);
+					message.channel.send(`p!give ${pancakes} <@${worker.superuser}>`);
 				});
 			});
 		})

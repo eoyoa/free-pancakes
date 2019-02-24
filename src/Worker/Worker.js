@@ -16,10 +16,8 @@ module.exports = class Worker {
 
 	run() {
 		const client = new Discord.Client();
-
 		client.on("message", message => {
 			const { guild, channel, author, content } = message;
-
 			if (guild != null && this.guild === guild.id && content.startsWith(this.prefix) && this.superuser === author.id) {
 				const args = content
 					.slice(this.prefix.length)
@@ -27,7 +25,6 @@ module.exports = class Worker {
 					.match(/"[^"]+"|[^\s]+/g)
 					.map(e => e.replace(/"(.+)"/, "$1"));
 				const command = args.shift();
-
 				try {
 					this.commands[command](message, args, this);
 				} catch (e) {
