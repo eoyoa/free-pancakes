@@ -6,7 +6,6 @@ module.exports = class Worker {
 		this.token = token;
 		this.dictionary = fs.readFileSync(dictionaryPath, { encoding: "utf8" }).split(/\n/g);
 		this.dictionaryLength = this.dictionary.length;
-
 		this.commands = require("./Commands");
 		this.sendMs = options.sendMs || 1500;
 		this.giveMs = options.giveMs || 900000;
