@@ -1,4 +1,4 @@
-# free pancakes
+# free pancakes (obsolete)
 free pancakes using array of selfbots
 ### dependencies
 - [node.js](https://nodejs.org/en/)
